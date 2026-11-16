@@ -31,6 +31,7 @@ export function UserList({ selectedUserId, onSelect }: UserListProps) {
           type="search"
           value={query}
           onChange={(event) => setQuery(event.target.value)}
+          aria-label="Buscar usuario"
           placeholder="Ej. Leanne"
           disabled={state.status !== 'success'}
         />
